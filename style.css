@@ -276,3 +276,57 @@ section h3 {
     font-size: 14px;
 
 }
+
+/* ===== RESPONSIVE STRUKTUR (MOBILE) ===== */
+@media (max-width: 768px) {
+    /* Sembunyikan garis horizontal yang manual di HP */
+    .horizontal-line, 
+    .horizontal-line1,
+    .vertical-line {
+        display: none;
+    }
+
+    /* Ubah group menjadi satu kolom ke bawah */
+    .middle-group, 
+    .bottom-group {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .middle-item, 
+    .bottom-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Tambahkan garis vertikal sederhana antar kotak di HP */
+    .box {
+        position: relative;
+        margin-bottom: 20px;
+        width: 80%; /* Biar kotak tidak terlalu lebar di HP */
+        min-width: unset;
+    }
+
+    /* Membuat garis penghubung vertikal otomatis antar box */
+    .box::after {
+        content: "";
+        position: absolute;
+        bottom: -22px;
+        left: 50%;
+        width: 2px;
+        height: 20px;
+        background: #0d3b66;
+    }
+
+    /* Hilangkan garis di kotak paling terakhir */
+    .bottom-item:last-child .box::after {
+        display: none;
+    }
+    
+    /* Penyesuaian galeri dokumentasi agar tidak 5 kolom di HP */
+    .galeri-dokumentasi {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

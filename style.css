@@ -156,30 +156,94 @@ section h3 {
 
 /* ===== STRUKTUR ===== */
 #struktur {
-    background: white;
+    background: #f4f8fc;
     padding: 60px 0;
 }
 
 #struktur h3 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: #0d3b66;
+    font-weight: bold;
 }
 
-/* Jabatan rata kiri */
-.struktur-list {
-    max-width: 600px;
-    margin: auto;
-    text-align: left;  /* rata kiri */
+/* Chart Container */
+.org-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.struktur-list p {
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.struktur-list strong {
+/* Box */
+.box {
+    background: white;
+    border: 2px solid #0d3b66;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
     color: #0d3b66;
+    min-width: 220px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+}
+
+.box span {
+    display: block;
+    font-weight: normal;
+    margin-top: 5px;
+    color: #333;
+}
+
+/* Garis Vertical */
+.vertical-line {
+    width: 2px;
+    height: 30px;
+    background: #0d3b66;
+}
+
+.vertical-line.small {
+    height: 20px;
+}
+
+/* Garis Horizontal Tengah */
+.horizontal-line {
+    width: 52%;
+    height: 2px;
+    background: #0d3b66;
+}
+
+/* Level Tengah */
+.middle-group {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.middle-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Level Bawah */
+.bottom-group {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.horizontal-line1 {
+    width: 22%;
+    height: 2px;
+    background: #0d3b66;
+}
+
+.bottom-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* ===== CONTACT ===== */
@@ -210,4 +274,5 @@ section h3 {
     text-align: center;
     padding: 15px;
     font-size: 14px;
+
 }

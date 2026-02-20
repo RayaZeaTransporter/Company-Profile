@@ -1,0 +1,213 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f4f8fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: white;
+    padding: 15px 0;
+    border-bottom: 2px solid #e6eef7;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0d3b66; /* Biru */
+    text-align: center;
+}
+
+/* Navbar biru */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #0d3b66;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1d5fa3;
+}
+
+/* ===== SECTION UMUM ===== */
+section {
+    padding: 60px 0;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #0d3b66;
+    font-weight: bold;
+}
+
+/* ===== ABOUT ===== */
+#about {
+    background: #0d3b66;
+    padding: 60px 0;
+}
+
+#about h3 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    color: #fff;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* ===== LEGALITAS ===== */
+/* ===== LEGALITAS STRUCTURE ===== */
+
+.sub-legalitas h4,
+.sub-perpajakan h4 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0d3b66;
+}
+
+.legalitas-space {
+    height: 50px; /* jarak antar bagian */
+}
+
+.galeri-legalitas,
+.galeri-pajak {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.galeri-legalitas img,
+.galeri-pajak img {
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.galeri-legalitas img:hover,
+.galeri-pajak img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== DOKUMENTASI ===== */
+/* ===== DOKUMENTASI ===== */
+.galeri-dokumentasi {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+/* Bungkus gambar supaya konsisten */
+.galeri-dokumentasi img {
+    width: 100%;
+    height: 200px;          /* tinggi sama */
+    object-fit: cover;      /* biar proporsional & tidak gepeng */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.galeri-dokumentasi img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== STRUKTUR ===== */
+#struktur {
+    background: white;
+    padding: 60px 0;
+}
+
+#struktur h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0d3b66;
+}
+
+/* Jabatan rata kiri */
+.struktur-list {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;  /* rata kiri */
+}
+
+.struktur-list p {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.struktur-list strong {
+    color: #0d3b66;
+}
+
+/* ===== CONTACT ===== */
+#contact {
+    background: #0d3b66;
+    color: white;
+    padding: 40px 0;
+}
+
+.contact-container {
+    text-align: center; /* alamat di tengah */
+}
+
+.contact-container h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* ===== FOOTER ===== */
+.footer-bottom {
+    background: #082a4d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
